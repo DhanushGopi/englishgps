@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+
+    <style>
+            *{
+                padding: 0%;
+                margin: 0%;
+                font-family: "Noto Sans Tamil", sans-serif;
+            }
+
+            .cont{
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .googlebadge{
+                text-decoration: none;
+            }
+
+            .badge-cont{
+                width: 696px;
+                height: 18px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 0.5rem;
+                border-radius: 999px;
+                padding: 1rem;
+                background-color: #012061;
+                box-shadow: inset -4px -4px 2rem rgba(255, 255, 255, 0.3),
+                            inset 16px 16px 2rem rgba(0, 0, 0, 0.5),
+                            inset -4px -4px 1rem rgba(0, 0, 0, 0.2);
+            }
+
+            .badge-cont:hover {
+                box-shadow: inset 4px 4px 2rem rgba(255, 255, 255, 0.3),
+                            inset -16px -16px 2rem rgba(0, 0, 0, 0.5),
+                            inset 4px 4px 1rem rgba(0, 0, 0, 0.2);
+            }
+            
+            
+            .badge-text{
+                font-size: 1rem;
+                font-family: "Noto Sans Tamil", sans-serif;
+                font-weight: 600;             
+                text-align: center;
+                color: white;
+                text-decoration: none;
+                transition: 0.4s ease;
+            }
+
+            .badge-cont:hover .badge-text {
+                    color: #FFDB59;
+                    -webkit-text-stroke: 0.3px #00133A;
+                    text-shadow: 0 4px 0 #00133A;  
+            }
+
+            .google-svg {
+                width: 200px;
+                height: auto; /* keeps aspect ratio */
+            }
+
+            .googlelogo{
+                    width: 16px;
+            }
+
+
+            @media screen and (min-width: 320px) and (max-width: 728px) {
+                .badge-cont{
+                    width: 268px;
+                    height: auto;
+                    border-radius: 1rem;
+                    justify-content: center;
+                    gap: 0.5rem;
+                    padding: 0.5rem 1rem;
+                }
+
+                .badge-text{
+                    font-size: 0.9rem;
+                }
+            }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="cont">
+        <a class="googlebadge" href="https://www.google.com/preferences/source?q=https://www.dinamani.com/" target="_blank" rel="noopener noreferrer">
+        <div class="badge-cont">
+
+            <img class="googlelogo" src="./google.png" alt="Google Latest logo">
+            <p class="badge-text">Add as a preferred source on Google</p>
+        
+        </div>
+        </a>
+    </div>
+</body>
+</html>
